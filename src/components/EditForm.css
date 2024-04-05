@@ -1,0 +1,52 @@
+.edit-form-modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  backdrop-filter: blur(10px);
+}
+.edit-form-modal-content {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px; /* Could be more or less, depending on screen size */
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  /* border: 1px solid #888; */
+  width: 30%;
+}
+.input-dest {
+  border: 1px solid lightgrey;
+  padding: 10px 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+}
+.cross {
+  text-align: right;
+  cursor: pointer;
+}
+.edit-form-btn {
+  background: #103ecc;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.edit-form-btn:hover {
+  transform: scale(1.2);
+  transition: all 0.25s linear;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+@media only screen and (max-width: 768px) {
+  .edit-form-modal-content {
+    width: 70%;
+  }
+}

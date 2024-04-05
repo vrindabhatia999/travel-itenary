@@ -1,0 +1,63 @@
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  backdrop-filter: blur(10px);
+}
+.modal-content {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px; /* Could be more or less, depending on screen size */
+  background-color: #f2f5fc;
+  margin: 15% auto;
+  padding: 20px;
+  /* border: 1px solid #888; */
+  width: 30%;
+}
+.close-div {
+  align-self: flex-end;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #44977a;
+  padding: 6px 12px;
+  color: #ccffed;
+  font-size: 14px;
+}
+.user-input {
+  border: none;
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #444343;
+  font-family: sans-serif;
+}
+.submit-btn {
+  width: 70%;
+  margin: 0 auto;
+  border: none;
+  padding: 6px 12px;
+  background: #dce2f2;
+  color: black;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.user-input:focus {
+  outline: none;
+}
+@media only screen and (max-width: 768px) {
+  .modal-content {
+    width: 70%;
+  }
+}

@@ -1,0 +1,74 @@
+.dropZone {
+  width: 40%;
+  background: #f2f5fc;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 12px;
+}
+.drap-drp {
+  padding: 6px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px dashed #c1ceeb;
+  background: white;
+  /* margin-top: 5%; */
+  border-radius: 10px;
+  height: 100%;
+}
+.drop-label {
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 4%;
+}
+.file-btn {
+  /* width: 20%; */
+  margin: 0 auto;
+  border: none;
+  padding: 6px 12px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+.image {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.img-div-drag {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 10px 0px;
+  align-items: center;
+  /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+  /* background: #f2f5fc; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.drag-drp-img {
+  border-radius: 10px;
+  width: 90%;
+  height: 100%;
+}
+.img-del-drag {
+  width: 30%;
+  margin: 0 auto;
+  border: none;
+  margin-top: 2%;
+  background: transparent;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .dropZone {
+    width: 90%;
+  }
+  .img-div-drag {
+    width: 45%;
+  }
+  .drag-drp-img {
+    width: 80%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,54 @@
+.ite-listing-cont {
+  height: 150px;
+  overflow: auto;
+}
+.ite-list-ul {
+  list-style: none;
+}
+.ite-list-li {
+  margin-top: 10px;
+  background: #f3f4fa;
+  padding: 10px 12px;
+  border-radius: 5px;
+  display: flex;
+  width: 90%;
+  /* justify-content: space-between; */
+  align-items: center;
+  position: relative;
+}
+.ite-list-date-label {
+  width: max-content;
+  background: #fed81c;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+.list-cont {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.del-btn {
+  cursor: pointer;
+}
+.dest-label {
+  font-weight: 500;
+}
+.purpose-label {
+  color: #333;
+  font-size: 14px;
+}
+.edit-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.ite-action {
+  position: absolute;
+  right: 0;
+}
+@media only screen and (max-width: 768px) {
+  .ite-list-ul {
+    padding: 0;
+  }
+}
